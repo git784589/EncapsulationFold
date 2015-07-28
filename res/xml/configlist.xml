@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 必须加包名 -->
+<config id="userInfoList">
+	<tab lazy="true" vb="true" class="com.yx.hzyp.mpc.ZzrkFregment">暂住</tab>
+	<tab lazy="true" vb="true" class="com.yx.hzyp.mpc.THFregment">同户</tab>
+	<tab lazy="false" vb="true" class="">驾驶员</tab>
+	<tab lazy="true" vb="true" class="">本人车辆</tab>
+	<tab lazy="true" vb="true" class="">全国重点</tab>
+	<tab lazy="true" vb="false" class="null">巡逻盘查</tab>
+	<tab lazy="false" vb="true" class="">轨迹</tab>
+	<tab lazy="false" vb="true" class="null">临控及布控</tab>
+	<tab lazy="false" vb="false" class="com.yx.hzyp.mpc.EmptyActivity">空的内容,垫底用的</tab>
+</config>

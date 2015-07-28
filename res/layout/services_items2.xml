@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/traffic_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginTop="10dp"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/traffic_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/rect_white_bg" >
+
+        <ImageView
+            android:id="@+id/traffic_icon"
+            android:layout_width="26dp"
+            android:layout_height="28dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/service_traffic_icon"
+            android:contentDescription="@string/nones" />
+
+        <TextView
+            android:id="@+id/mm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="45dp"
+            android:textColor="#4b4b47"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/traffic_arrow"
+            android:layout_width="12dp"
+            android:layout_height="6dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/service_arrow_down"
+            android:tag="service_arrow" />
+    </RelativeLayout>
+
+    <com.yx.hzyp.mpc.exlib.FoldingLayout
+        android:id="@+id/traffic_item"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:tag="service_item" >
+
+        <ListView
+            android:id="@+id/thlist"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#6699FF" >
+
+            <!-- 同户关系 -->
+        </ListView>
+    </com.yx.hzyp.mpc.exlib.FoldingLayout>
+
+</LinearLayout>
